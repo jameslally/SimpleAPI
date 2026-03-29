@@ -1,0 +1,11 @@
+using SimpleAPI.Extensions;
+
+var builder = WebApplication.CreateBuilder(args);
+builder.AddSimpleApi();
+
+var app = builder.Build();
+app.ConfigureSimpleApi();
+
+app.Run();
+
+public partial class Program { }
