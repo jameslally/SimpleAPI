@@ -1,5 +1,6 @@
 using Scalar.AspNetCore;
 using SimpleAPI.Endpoints;
+using SimpleAPI.Middleware;
 
 namespace SimpleAPI.Extensions;
 
@@ -22,6 +23,9 @@ public static class WebApplicationExtensions
         {
             app.UseHttpsRedirection();
         }
+
+        // Add request logging middleware
+        app.UseMiddleware<RequestLoggingMiddleware>();
 
         app.MapWeatherForecastEndpoints();
         return app;
