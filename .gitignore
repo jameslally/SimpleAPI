@@ -52,3 +52,12 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Ignore GitHub Copilot index files
+CopilotIndices/
+ProjectEvaluation/
+/.vs/
+/.vs/CopilotSnapshots/DFB070C4034ED246A3DCE1057E5A772A
+/.vs/SimpleAPI/copilot-chat/af41dd32/sessions
+/.vs/SimpleAPI/DesignTimeBuild
+/.vs/SimpleAPI/FileContentIndex
